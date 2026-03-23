@@ -1,6 +1,6 @@
 # Aplicação de comandos 
 
-#### Lembre de instalar as extensões Python + Django e SQLite Viewer para usar o código
+## Lembre de instalar as extensões Python + Django e SQLite Viewer para usar o código
 
 - `py -m venv .venv` -> Criação de novo ambiente digital
 - `.venv\scripts\activate` -> Ativar ambiente digital
@@ -10,12 +10,16 @@
 - `py -m django --version` -> Ver a versão dos instalados
 - `django-admin startproject project .` -> Criar uma pasta chamada project que possui arquivos do projeto
 - `py manage.py runserver` -> Inicia o servidor web
-- `py manage.py startapp nome_app` -> Inicia uma nova pasta com os arquivos do projeto/app 
+- `py manage.py startapp nome_app` -> Inicia uma nova pasta com os arquivos do projeto/app.
+
 ## Migrate
+
 - `py manage.py migrate` -> Implementar os scripts criados, construção do squlite
 - `py manage.py makemigrations forum` Cria os scripts/model para a base do banco de dados
-- `py manage.py sqlmigrate forum 0001` -> Exibe os comandos sql da tabela 
+- `py manage.py sqlmigrate forum 0001` -> Exibe os comandos sql da tabela .
+
 ### Shell
+
 - `py manage.py shell` -> Abre um terminal/shell do django
 - `from forum.models import Pergunta, Resposta` -> Importa os models Perguntas & Resposta para o shell
 - `Perguntas.objects.all()` -> Listar as perguntas criadas + Caso adicione .values() no final ele exibe todas as perguntas + Se adicionar .filter(id=1) ele exibe apenas a pergunta com id 1
@@ -30,6 +34,8 @@
 - `al.delete()` -> Deletar a resposta
 - `al.pergunta` -> mostra a pergunta dessa resposta
 - `a3 = q.resposta_set.create(texto="", data....)` -> Cria a resposta a partir do objeto pergunta
-- `quit()` -> sai do shell
+- `quit()` -> sai do shell.
+
 #### Admin
-- `py manage.py createsuperuser` -> Cria um user/admin
+
+- `py manage.py createsuperuser` -> Cria um user/admin.
