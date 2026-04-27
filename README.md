@@ -11,6 +11,7 @@
 - `django-admin startproject project .` -> Criar uma pasta chamada project que possui arquivos do projeto
 - `py manage.py runserver` -> Inicia o servidor web
 - `py manage.py startapp nome_app` -> Inicia uma nova pasta com os arquivos do projeto/app.
+- `py manage.py test` -> Executa os testes do sistema (arquivo de teste precisa ser nomeado test)
 
 ## Migrate
 
